@@ -1,0 +1,162 @@
+.topbar-wrapper {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  width: 100%;
+  background-color: $dg-white;
+  color: $dg-black;
+  border-bottom: 2px solid $dg-black;
+
+  .hoverable, a {
+    color: $dg-black;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $dg-near-white;
+      cursor: pointer;
+    }
+
+    &.social {
+      &#facebook {
+        background-color: $dg-white;
+        color: $facebook-blue;
+        &:hover { background-color: $dg-near-white; }
+      }
+
+      &#twitter {
+        background-color: $dg-white;
+        color: $twitter-blue;
+        &:hover { background-color: $dg-near-white; }
+      }
+
+      &#youtube {
+        background-color: $dg-white;
+        color: $youtube-red;
+        &:hover { background-color: $dg-near-white; }
+      }
+
+      &#github {
+        background-color: $dg-white;
+        color: $dg-dark-grey;
+        &:hover { background-color: $dg-near-white; }
+      }
+    }
+  }
+
+  header {
+    width: 90%;
+    margin: 0px auto;
+
+    @media #{$md-screen} {
+      width: 100%;
+    }
+
+    img, #logo {
+      display: block;
+      float: left;
+      width: 50px;
+    }
+
+    #nav-toggle {
+      display: none;
+
+      @media #{$md-screen} {
+        display: block;
+        float: right;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 24px;
+
+        i {
+          display: inline-block;
+          vertical-align: -11px;
+        }
+      }
+    }
+
+    nav {
+      display: block;
+      float: left;
+      margin-left: 10px;
+      text-transform: uppercase;
+
+      a {
+        display: inline-block;
+        padding: 15px 10px;
+      }
+
+      @media #{$md-screen} {
+        display: none;
+
+        &.shown {
+          display: block;
+          float: none;
+          clear: both;
+          margin-left: 0px;
+          text-align: center;
+
+          a {
+            padding: 15px 10px;
+          }
+        }
+      }
+
+      @media #{$sm-screen} {
+        a {
+          display: block;
+          text-align: left;
+        }
+      }
+    }
+
+    .social {
+      display: block;
+      float: right;
+
+      @media #{$md-screen} {
+        display: none;
+        float: none;
+
+        &.shown {
+          display: block;
+          text-align: center;
+          border-top: 1px solid $dg-light-grey;
+        }
+      }
+
+      a {
+        display: block;
+        float: left;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        font-size: 24px;
+
+        i {
+          display: inline-block;
+          vertical-align: -11px;
+        }
+
+        @media #{$md-screen} {
+          display: inline-block;
+          float: none;
+          width: auto;
+          height: auto;
+          vertical-align: 0px;
+          padding: 15px;
+
+          i {
+            vertical-align: 0px;
+          }
+        }
+
+        @media #{$sm-screen} {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

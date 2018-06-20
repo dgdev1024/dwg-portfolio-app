@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro|Source+Serif+Pro');
+@import "./variables.scss";
+@import "./mixins.scss";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 85%;
+  margin: 0px auto;
+
+  @media #{$md-screen} {
+    width: 95%;
+  }
+}
+
+body {
+  color: $dg-black;
+  background-color: $dg-white;
+  background-image: url(../img/dwg-logo-background-transparent.png);
+  background-repeat: repeat;
+  background-position: top center;
+  font-family: $normal-font;
+
+  @import "./topbar.scss";
+  @import "./welcome.scss";
+}

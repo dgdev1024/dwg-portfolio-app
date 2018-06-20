@@ -1,0 +1,47 @@
+#welcome {
+  .container {
+    width: 738px;
+    margin-top: 164px;
+    background-color: $dg-white;
+
+    .pane {
+      display: inline-block;
+      width: 50%;
+  
+      img {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 44px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      a {
+        display: inline-block;
+        padding: 8px;
+        margin-top: 16px;
+        margin-right: 8px;
+        box-sizing: border-box;
+        font-size: 18px;
+        text-decoration: none;
+        color: $dg-black;
+        background-color: transparent;
+        border: 2px solid $dg-black;
+        @include transition(0.2s);
+
+        &:hover {
+          color: $dg-white;
+          background-color: $dg-black;
+        }
+      }
+
+      &.middle {
+        vertical-align: 134px;
+      }
+    }
+  }
+}
