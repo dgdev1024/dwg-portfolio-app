@@ -17,7 +17,7 @@ export default () => (
         <h1>Dennis W. Griffin</h1>
         <h2>Web Developer</h2>
         <a href={Links.resume} target="_blank">Resume</a>
-        <a href="#about" target="_blank">Learn More</a>
+        <a href="#about">Learn More</a>
       </div>
     </div>
   </section>

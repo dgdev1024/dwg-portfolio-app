@@ -53,7 +53,7 @@ module.exports = {
             options: {
               bypassOnDebug: true,
               pngquant: {
-                quality: '62-82',
+                quality: '60-80',
                 speed: 4
               }
             }
@@ -61,7 +61,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.ico$/,
+        test: /\.(ico|pdf)$/,
         use: [ 'file-loader?name=[name].[ext]' ]
       }
     ]

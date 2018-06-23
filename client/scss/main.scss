@@ -22,8 +22,13 @@ body {
   background-image: url(../img/dwg-logo-background-transparent.png);
   background-repeat: repeat;
   background-position: top center;
+  background-attachment: fixed;
   font-family: $normal-font;
 
   @import "./topbar.scss";
   @import "./welcome.scss";
+  @import "./about.scss";
+  @import "./projects.scss";
+  @import "./contact.scss";
+  @import "./footer.scss";
 }

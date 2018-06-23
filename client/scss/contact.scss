@@ -1,0 +1,139 @@
+#contact {
+  .container {
+    margin-top: 82px;
+    padding: 8px;
+    background-color: $dg-white;
+    @include box-shadow(5px, 5px, 10px, $dg-black);
+
+    h1 {
+      margin-bottom: 8px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid $dg-black;
+      font-size: 34px;
+      text-align: center;
+
+      @media #{$md-screen} {
+        font-size: 32px;
+      }
+
+      @media #{$sm-screen} {
+        font-size: 30px;
+      }
+    }
+
+    a {
+      color: $dg-dark-grey;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    p, label, ul {
+      display: block;
+      margin: 8px 0px;
+      font-size: 18px;
+
+      @media #{$md-screen} {
+        font-size: 16px;
+      }
+
+      @media #{$sm-screen} {
+        text-align: center;
+      }
+    }
+
+    ul {
+      margin-left: 32px;
+
+      @media #{$sm-screen} {
+        text-align: center;
+        list-style: none;
+        margin-left: 0px;
+      }
+    }
+
+    .form-element {
+      display: block;
+      margin: 8px 0px;
+
+      label {
+        margin: 2px 0px;
+
+        &.inline {
+          display: inline;
+        }
+      }
+
+      input[type="text"], textarea {
+        display: block;
+        width: 100%;
+        padding: 4px;
+        box-sizing: border-box;
+        font-family: $input-font;
+        font-size: 18px;
+        color: $dg-black;
+        background-color: $dg-white;
+        border: 2px solid $dg-black;
+        @include transition(0.2s);
+
+        &:hover {
+          background-color: $dg-near-white;
+        }
+      }
+
+      textarea {
+        height: 160px;
+        resize: none;
+      }
+
+      input[type="checkbox"] {
+        margin-right: 8px;
+      }
+
+      button {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        font-family: $normal-font;
+        font-size: 18px;
+        color: $dg-black;
+        background-color: $dg-white;
+        border: 2px solid $dg-black;
+        @include transition(0.2s);
+
+        &:hover {
+          color: $dg-white;
+          background-color: $dg-black;
+          cursor: pointer;
+        }
+
+        &:disabled {
+          background-color: $dg-light-grey;
+          color: $dg-dark-grey-hover;
+
+          &:hover {
+            background-color: $dg-light-grey;
+            color: $dg-dark-grey-hover;
+            cursor: default;
+          }
+        }
+      }
+    }
+
+    .pane {
+      display: inline-block;
+      width: 48%;
+      margin: 0px 1%;
+      vertical-align: top;
+
+      @media #{$sm-screen} {
+        display: block;
+        width: 100%;
+        margin: 16px 0px;
+        vertical-align: none;
+      }
+    }
+  }
+}

@@ -7,7 +7,9 @@ import React from 'react'
 
 export default () => (
   <footer>
-    Copyright &copy; 2018 Dennis Griffin<br />
-    Coded by <a href="https://github.com/dgdev1024" target="_blank">Dennis Griffin</a>.
+    <div className="container">
+      Copyright &copy; 2018 Dennis Griffin<br />
+      Coded by <a href="https://github.com/dgdev1024" target="_blank">Dennis Griffin</a>.
+    </div>
   </footer>
 )
